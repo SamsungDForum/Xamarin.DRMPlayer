@@ -9,6 +9,9 @@
     <shortcut-list />
     <privileges>
         <privilege>http://developer.samsung.com/privilege/drmplay</privilege>
+        <privilege>http://tizen.org/privilege/internet</privilege>
+        <privilege>http://tizen.org/privilege/mediastorage</privilege>
+        <privilege>http://tizen.org/privilege/externalstorage</privilege>
     </privileges>
     <provides-appdefined-privileges />
 </manifest>
