@@ -33,6 +33,7 @@ namespace XamarinSamplePlayer
                 layout.Add(slider);
             }
         }
+
         internal void Deactivate()
         {
             if (activated == true)
@@ -42,6 +43,7 @@ namespace XamarinSamplePlayer
                 timer.Stop();
             }
         }
+
         private void TimerTickUpdater(object s, ElapsedEventArgs e)
         {
             var current = (uint)playerControl.GetCurrentPosition();

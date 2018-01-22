@@ -23,14 +23,16 @@ namespace XamarinSamplePlayer
             LoadApplication(new App());
             Initialize();
         }
+
         private void Initialize()
         {
             page = App.Current.MainPage as ContentPage;
             layout = page.Content as StackLayout;
             MessageBox.SetParent(page);
             loadingIcon = new LoadingIcon(layout.Children);
-            InitialzieKeyEvent();
+            InitializeKeyEvent();
         }
+
         private void InitializePlayer()
         {
             var current = uriList.GetCurrentTrack();
@@ -41,7 +43,7 @@ namespace XamarinSamplePlayer
             }
         }
 
-        private void InitialzieKeyEvent()
+        private void InitializeKeyEvent()
         {
             _keyDown = new EcoreEvent<EcoreKeyEventArgs>(EcoreEventType.KeyDown, EcoreKeyEventArgs.Create);
             _keyDown.On += KeyEventHandler;
@@ -102,7 +104,6 @@ namespace XamarinSamplePlayer
 
         internal bool MediaKeyEvent(string keyPressedName)
         {
-
             if (keyPressedName == "XF86AudioPlay")
             {
                 playerControl.Resume();
@@ -181,6 +182,7 @@ namespace XamarinSamplePlayer
             }
             base.OnTerminate();
         }
+
         static void Main(string[] args)
         {
             var app = new Program();

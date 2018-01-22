@@ -7,6 +7,7 @@ namespace XamarinSamplePlayer
     internal abstract class UISynchronizer
     {
         private static SynchronizationContext uiContext;
+
         protected UISynchronizer()
         {
             if (TizenSynchronizationContext.Current == null)

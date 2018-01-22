@@ -172,7 +172,6 @@ namespace XamarinSamplePlayer
             }
             catch (InvalidOperationException)
             { }
-
         }
 
         internal void SetPosition(int position)
@@ -236,9 +235,7 @@ namespace XamarinSamplePlayer
                 }
             }
             catch (InvalidOperationException)
-            {
-
-            }
+            { }
             finally
             {
                 if (drm != null)
@@ -261,11 +258,9 @@ namespace XamarinSamplePlayer
                 }
             }
             catch (InvalidOperationException)
-            {
-
-            }
+            { }
         }
-        
+
         internal int GetCurrentPosition()
         {
             if (CheckStateReady(player.State) == false)

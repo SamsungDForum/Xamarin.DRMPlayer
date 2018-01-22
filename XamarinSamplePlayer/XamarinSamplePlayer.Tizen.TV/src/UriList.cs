@@ -71,7 +71,6 @@ namespace XamarinSamplePlayer
 
         internal bool MoveToNextTrack()
         {
-            
             try
             {
                 if(currentTrack.Next != null)

@@ -8,6 +8,7 @@ namespace XamarinSamplePlayer
     {
         private static SynchronizationContext uiContext;
         private static Page parent;
+
         static internal void SetParent(Page parent)
         {
             MessageBox.parent = parent;
