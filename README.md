@@ -13,7 +13,7 @@ Right (▷) | Play the next content in the playlist.
 Down (▽) | Show position bar.
 Up (△) | Hide position bar.
 Play (▶) | Start media playback.
-Pause (Ⅱ) | Pause media playback.
+Pause (‖) | Pause media playback.
 Stop (■) | Stop media playback.
-Next (▶▶) | Jump 10 seconds forward.
-Rewind (◀◀) | Jump 10 seconds backward.
+Next (⏩) | Jump 10 seconds forward.
+Rewind (⏪) | Jump 10 seconds backward.
